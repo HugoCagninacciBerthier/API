@@ -101,8 +101,8 @@ L'API SOAP est construite avec Flask et Zeep, et fournit un WSDL permettant aux 
 </soap:Envelope>
 
  
-### Lancement du serveur
-# python soap_api.py
+## Lancement du serveur
+### python soap_api.py
 L'API sera disponible à l'adresse http://localhost:8000.
  
 ## Conclusion
