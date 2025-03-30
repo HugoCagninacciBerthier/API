@@ -22,10 +22,7 @@ pip install flask flask-restx pandas zeep lxml
 ## 1. API REST
  
 ### Fonctionnalité
-L'API REST permet d'obtenir des informations sur une entreprise à partir de son numéro SIREN en effectuant une requête HTTP GET.
- 
-### Code Source
-Le fichier principal de l'API REST est basé sur Flask et Flask-RESTx. Il charge les données depuis un fichier CSV et expose un endpoint permettant la recherche d'une entreprise.
+L'API permet d'obtenir des informations sur une entreprise à partir de son numéro SIREN.
  
 ### Chercher une entreprise par son SIREN
 - GET /siren/<siren_id> : Recherche une entreprise par son numéro SIREN.
@@ -58,17 +55,11 @@ curl -X GET "http://localhost:5000/siren/123456789"
 python rest_api.py
 
 Par défaut, l'API sera disponible à l'adresse http://localhost:5000.
- 
----
- 
 ## 2. API SOAP
  
 ### Fonctionnalité
 L'API SOAP permet de récupérer les mêmes informations qu'avec l'API REST, mais en utilisant le protocole SOAP.
- 
-### Code Source
-L'API SOAP est construite avec Flask et Zeep, et fournit un WSDL permettant aux clients de générer des requêtes conformes.
- 
+
 ### Paramètres
 - **Entrée** : siren (string) - Numéro SIREN de l'entreprise recherchée.
 - **Sortie** : XML contenant les informations de l'entreprise ou un message d'erreur si le SIREN n'est pas trouvé.
@@ -105,8 +96,6 @@ L'API SOAP est construite avec Flask et Zeep, et fournit un WSDL permettant aux 
 ## Lancement du serveur
 Uriliser la commande : python soap_api.py dans un terminal de commandes.
 L'API sera disponible à l'adresse http://localhost:8000.
- 
-## Conclusion
-Ces deux API permettent de récupérer des informations sur les entreprises en fonction de leur numéro SIREN. L'API REST est plus moderne et facile à consommer, tandis que l'API SOAP offre une compatibilité avec des systèmes plus anciens utilisant ce protocole.
+
 ![undefined_Processus_d'API_pour_le_SIREN (1)](https://github.com/user-attachments/assets/8e54292c-7e94-4a4d-aa6b-923831227162)
 
