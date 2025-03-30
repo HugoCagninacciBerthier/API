@@ -33,7 +33,8 @@ Le fichier principal de l'API REST est basé sur Flask et Flask-RESTx. Il charge
 - **Entrée** : siren_id (string) - Numéro SIREN de l'entreprise recherchée.
 - **Sortie** : JSON contenant les informations de l'entreprise ou un message d'erreur si le SIREN n'est pas trouvé.
  
-### Exemple d'utilisation
+### Utilisation
+Vous devez utiliser POSTMAN pour effectuer votre requête.
 #### Requête
 curl -X GET "http://localhost:5000/siren/123456789"
 
@@ -67,10 +68,6 @@ L'API SOAP permet de récupérer les mêmes informations qu'avec l'API REST, mai
 ### Code Source
 L'API SOAP est construite avec Flask et Zeep, et fournit un WSDL permettant aux clients de générer des requêtes conformes.
  
-### Endpoints
-- GET /egapro.wsdl : Fournit la description du service WSDL.
-- GET /soap : Endpoint SOAP qui traite les requêtes et retourne les données associées à un numéro SIREN.
- 
 ### Paramètres
 - **Entrée** : siren (string) - Numéro SIREN de l'entreprise recherchée.
 - **Sortie** : XML contenant les informations de l'entreprise ou un message d'erreur si le SIREN n'est pas trouvé.
@@ -85,7 +82,7 @@ L'API SOAP est construite avec Flask et Zeep, et fournit un WSDL permettant aux 
     </soap:Body>
 </soap:Envelope>
 
-#### Réponse SOAP (XML)
+#### Exemple de réponse SOAP (XML)
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
     <soap:Body>
         <GetSirenResponse>
