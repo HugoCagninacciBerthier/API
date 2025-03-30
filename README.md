@@ -108,5 +108,5 @@ L'API sera disponible à l'adresse http://localhost:8000.
  
 ## Conclusion
 Ces deux API permettent de récupérer des informations sur les entreprises en fonction de leur numéro SIREN. L'API REST est plus moderne et facile à consommer, tandis que l'API SOAP offre une compatibilité avec des systèmes plus anciens utilisant ce protocole.
- 
-![undefined_Processus_d'API_pour_le_SIREN](https://github.com/user-attachments/assets/c609921e-709e-488f-a2f7-181d4aa1adce)
+![undefined_Processus_d'API_pour_le_SIREN (1)](https://github.com/user-attachments/assets/8e54292c-7e94-4a4d-aa6b-923831227162)
+
